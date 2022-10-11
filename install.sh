@@ -9,11 +9,11 @@
 # @@Copyright        :  Copyright: (c) 2022 Jason Hempstead, Casjays Developments
 # @@Created          :  Tuesday, Oct 11, 2022 15:07 EDT
 # @@File             :  install.sh
-# @@Description      :  
+# @@Description      :
 # @@Changelog        :  New script
 # @@TODO             :  Better documentation
-# @@Other            :  
-# @@Resource         :  
+# @@Other            :
+# @@Resource         :
 # @@Terminal App     :  no
 # @@sudo/root        :  no
 # @@Template         :  installers/dockermgr
@@ -146,10 +146,10 @@ ADDITIONAL_MOUNTS+=""
 CUSTOM_ARGUMENTS="--shm-size=256MB"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Add Add main port [port] or [port:port] - LISTEN will be added
-SERVER_WEB_PORT=""
+SERVER_WEB_PORT="19005:80"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Same as SERVER_WEB_PORT and do not add SERVER_WEB_PORT here as it will be added
-SERVER_PORT_ADD_CUSTOM=""
+SERVER_PORT_ADD_CUSTOM="19006:9090"
 SERVER_PORT_ADD_CUSTOM+=""
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Mount docker socket [pathToSocket]
